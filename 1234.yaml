@@ -24,9 +24,8 @@ spec:
           mountPath: /data
       volumes:
       - name: nfs-vol
-        nfs:
-          path: /shared
-          server: 211.183.3.100
+        persistentVolumeClaim:
+          claimName: nfs-pvc
 ---
 apiVersion: v1
 kind: Service
