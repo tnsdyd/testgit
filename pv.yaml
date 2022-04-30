@@ -7,7 +7,7 @@ spec:
     storage: 1Gi
   accessModes:
   - ReadWriteMany
-  persistentVolumeReclaimPolicy: delete
+  persistentVolumeReclaimPolicy: Delete
   nfs:
     path: /shared
     server: 211.183.3.100
