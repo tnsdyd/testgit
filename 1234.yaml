@@ -35,8 +35,8 @@ metadata:
 spec:
   ports:
   - name: nginx-port
-    port: 80  		# <---- cluster port(서비스포트가 됨) = lb 's port 
-    targetPort: 80 	# <----  Pod's Port
-  selector:      	# <--- 어떤 포드로 전송할 것인가를 결정
-    app: nginx   	# <--- 이러한 라벨을 부착한 포드에게 전달한다.
+    port: 80  		 
+    targetPort: 80 	
+  selector:      	
+    app: nginx        
   type: LoadBalancer
